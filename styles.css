@@ -2,6 +2,9 @@
     font-family: 'Roboto';
 }
 
+body {
+    margin: 0;
+}
 #main {
     display: grid;
     grid-template-columns: 1fr 5fr;
@@ -27,11 +30,6 @@
     align-items: center;
 }
 
-.magnify {
-    background: url(src/magnify.svg);
-    width: 20px;
-    height: 20px;
-}
 
 .searchbox{
     height: 20px;
@@ -51,11 +49,6 @@
     gap: 15px;
 }
 
-.bell {
-    background: url(src/bell.svg);
-    width: 20px;
-    height: 20px;
-}
 
 .welcome {
     display: grid;
@@ -101,12 +94,157 @@
     display: grid;
     grid-area: 1 / 1 / 4 / 2;
     border: 3px solid green;
+    grid-template-rows: auto auto auto 1fr;
+    justify-content: start;
+    padding-left: 10px;
+    gap: 50px;
 }
+
+.db {
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto 1fr;
+    grid-row: 1 / 2;
+}
+
+.nav {
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto 1fr;
+    grid-row: 2 / 3;
+}
+
+.support {
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto 1fr;
+    grid-row: 3 / 4;
+}
+
+.sidebar li {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    list-style-type: none;
+    gap: 7px;
+}
+
+.sidebar ul {
+    display: grid;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+
 
 .main-content {
     display: grid;
     grid-area: 2 / 2 / -1 / -1;
     border: 3px solid pink;
     background-color: #d9d7d7;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: 4fr 1fr;
+}
+
+.dashboard {
+    background: url(src/view-dashboard.svg);
+    width: 30px;
+    height: 30px;
+    display: block;
+}
+
+
+.star {
+    background: url(src/star-plus.svg);
+    width: 20px;
+    height: 20px;
+    display: block;
+}
+
+.eye {
+    background: url(src/eye-plus.svg);
+    width: 20px;
+    height: 20px;
+    display: block;
+}
+
+.fork {
+    background: url(src/source-fork.svg);
+    width: 20px;
+    height: 20px;
+    display: block;
+}
+
+.bell {
+    background: url(src/bell.svg);
+    width: 20px;
+    height: 20px;
+}
+
+.magnify {
+    background: url(src/magnify.svg);
+    width: 20px;
+    height: 20px;
+}
+
+.home {
+    background: url(src/home-variant.svg);
+    width: 20px;
+    height: 20px;
+    display: block;
+}
+
+.profile {
+    background: url(src/card-account-details-outline.svg);
+    width: 20px;
+    height: 20px;
+    display: block;
+}
+
+.msg {
+    background: url(src/message.svg);
+    width: 20px;
+    height: 20px;
+    display: block;
+}
+
+.clock {
+    background: url(src/clock.svg);
+    width: 20px;
+    height: 20px;
+    display: block;
+}
+
+.files {
+    background: url(src/file-multiple.svg);
+    width: 20px;
+    height: 20px;
+    display: block;
+}
+
+.comm {
+    background: url(src/account-group.svg);
+    width: 20px;
+    height: 20px;
+    display: block;
+}
+
+.cog {
+    background: url(src/cog.svg);
+    width: 20px;
+    height: 20px;
+    display: block;
+}
+
+.help {
+    background: url(src/message-question.svg);
+    width: 20px;
+    height: 20px;
+    display: block;
+}
+
+.privacy {
+    background: url(src/shield-account.svg);
+    width: 20px;
+    height: 20px;
+    display: block;
 }
